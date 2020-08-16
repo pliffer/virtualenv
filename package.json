@@ -4,5 +4,8 @@
   "description": "",
   "main": "virtualenv.js",
   "author": "Pliffer",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "astr-api": "git+https://github.com/pliffer/astr-api.git"
+  }
 }
