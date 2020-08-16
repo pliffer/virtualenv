@@ -1,0 +1,8 @@
+{
+  "name": "virtualenv",
+  "version": "0.0.1",
+  "description": "",
+  "main": "virtualenv.js",
+  "author": "Pliffer",
+  "license": "MIT"
+}
