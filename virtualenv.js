@@ -20,7 +20,12 @@ module.exports = {
 
                 labels[item.label] = [];
 
+                if(!item.child) return;
+
                 item.child.forEach(subItem => {
+
+                    // Aqui, se o item estiver marcado, ele não passa
+                    if(subItem.checked) return;
 
                     labels[item.label].push(subItem.label);
 
@@ -34,9 +39,15 @@ module.exports = {
 
             if(!labels) return Promise.reject('No obj found');
 
-            if(typeof labels[key] == 'undefined'){
+            if(key && typeof labels[key] == 'undefined'){
 
                 return Promise.reject(`Key ${key} not found`);
+
+            }
+
+            if(!key){
+
+                return labels;
 
             }
 
