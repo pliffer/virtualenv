@@ -1,4 +1,4 @@
-let Astr = require('./astr-api');
+let Astr = require('astr-api');
 
 module.exports = {
 
